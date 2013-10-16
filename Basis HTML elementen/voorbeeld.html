@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <title>Alle basis HTML elementen op een rijtje!</title>
+</head>
+<body>
+
+  <!-- 
+    Hieronder staan alle verschillende kopteksen. Er zijn er heel veel, ze gaan zelfs tot koptekst 6.
+    Een koptekst geef je aan met de tag H1 tot en met H6. De H komt van het engelse 'Heading' wat koptekst betekent.
+  -->
+  <h1>Koptekst 1</h1>
+  <h2>Koptekst 2</h2>
+  <h3>Koptekst 3</h3>
+  <h4>Koptekst 4</h4>
+  <h5>Koptekst 5</h5>
+  <h6>Koptekst 6</h6>
+
+  <!-- 
+    Hieronder staat een paragraaf. Een paragraaf wordt gebruikt voor een stuk tekst. Tussen verschillende paragrafen wordt automatisch een regel ruimte gelaten. Iedere tekst op een webpagina hoort in een paragraaf te staan.
+  -->
+  <p>Dit is de eerste paragraaf en zoals je ziet kan er een aardige lap tekst in. Het maakt niet uit hoe lang je de tekst hierbinnen maakt, de paragraaf groeit gewoon mee. Je zult zometeen zien dat als we er nog een paragraaf onder plaatsen er een regeltje witruimte tussen de twee paragrafen komt te staan. Dit is om het lezen makkelijker te maken.</p>
+
+  <p>Dit is de tweede paragraaf en zoals je ziet kan er een aardige lap tekst in. Het maakt niet uit hoe lang je de tekst hierbinnen maakt, de paragraaf groeit gewoon mee. Zoals je ziet zit er een extra regeltje ruimte tussen deze twee paragrafen.</p>
+
+  <!--
+    Hyperlinks, klikbare stukjes tekst, brengen je van A naar B op het internet. Het is simpelweg een verwijzing van
+    de ene pagina naar de andere pagina.
+  -->
+  <p>
+    <a href="pagina2.html">Ga naar pagina 2</a>
+  </p>
+
+  <!--
+    Een goede website is natuurlijk niet compleet zonder plaatjes erop. Maar hoe doe je dat eigenlijk?
+    Het is makkelijker dan je denkt. Plaatjes kunnen zowel van je computer gehaald worden als van het internet.
+
+    Kijk maar:
+  -->
+  <p>
+    <img src="strandbal.jpg" />
+    <img src="http://www.coderdojo-rotterdam.nl/images/coderdojo-rotterdam.png" />
+  </p>
+
+  <!--
+    De span tag is bedoelt om stukjes tekst aparte opmaak te geven. Bijvoorbeeld een stukje rode tekst, groene tekst of blauwe tekst.
+  -->
+  <p>
+    Dit is een <span style="color: blue">blauw</span> woordje, terwijl dit <span style="color: red">woordje</span> rood is!</span>. Je kunt ook woorden <span style="font-weight: bold">dik</span> of <span style="font-style: italic">schuin</span> maken.
+  </p>
+
+  <!--
+    Tabellen kunnen erg handig zijn voor het tonen van verschillende soorten informatie. Zo kun je bijvoorbeeld
+    een tabel bijhouden hoevaak jij al gewonnen hebt van je vrienden met voetbal.
+
+    - Start altijd met <table>
+    - Iedere rij beginnen met <tr> (table row = engels voor tabel rij)
+    - Alle vakjes per rij apart aangeven met <td> (table data = tabel data)
+    - Bovenste rij kun je in plaats van <td> ook <th> (table header = Tabel koptekst) gebruiken.
+    
+  -->
+  <table border="1">
+    <tr>
+      <th>Naam</th>
+      <th>Gewonnen (keer)</th>
+    </tr>
+    <tr>
+      <td>Tiemen</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Chris</td>
+      <td>5</td>
+    </tr>
+  </table>
+
+  <!-- 
+    Een div gebruik je meestal voor het aanwijzen van een vlak op je website. Je kunt dat vlak dan ook weer apart opmaken
+    of zelfs verplaatsen.
+  -->
+  <div style="width: 200px; background-color: orange">
+    Deze tekst staat in een div-tag. Als ik de div-tag kleiner maak dan deze zin lang is, dan wordt de zin afgebroken. Ook kan ik de div een aparte achtergrondkleur geven. Er is nog veel meer mogelijk, probeer maar het een en ander uit in combinatie met CSS!
+  </div>
+
+</body>
+</html>
