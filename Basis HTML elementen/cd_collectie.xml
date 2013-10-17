@@ -1,0 +1,37 @@
+<verzameling>
+  
+  <eigenaar>
+    <naam>Hier jouw naam</naam>
+    <leeftijd>14</leeftijd>
+  </eigenaar>
+
+  <artiesten>
+    
+    <artiest naam="De Jeugd Van Tegenwoordig">
+      <album naam="Ja, Natúúrlijk">
+        <liedje lengte="5:25" intop40="ja">Een Barkie</liedje>
+        <liedje lengte="4:11">Prinsjesdag</liedje>
+        <liedje lengte="3:53">Er Zijn Weer Dingen</liedje>
+        <liedje lengte="5:02">De Toneelacademie</liedje>
+      </album>
+    </artiest>
+
+    <artiest naam="Katy Perry">
+      <album naam="Teenage Dream">
+        <liedje lengte="3:48" intop40="ja">Teenage Dream</liedje>
+        <liedje lengte="3:51">Last Friday Night</liedje>
+        <liedje lengte="3:55">California Gurls</liedje>
+        <liedje lengte="3:52">Fireworks</liedje>
+      </album>
+      
+      <album naam="One Of The Boys">
+        <liedje lengte="4:08">One Of The Boys</liedje>
+        <liedje lengte="3:00">I Kissed a Girl</liedje>
+        <liedje lengte="3:19">Waking Up in Vegas</liedje>
+        <liedje lengte="4:07">Thinking Of You</liedje>
+      </album>
+    </artiest>
+
+  </artiesten>
+
+</verzameling>
