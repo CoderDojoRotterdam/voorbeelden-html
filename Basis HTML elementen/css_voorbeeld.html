@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Alle basis HTML elementen op een rijtje!</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  
+  <style type="text/css">
+    /*
+    * Binnen de style tags kun je de CSS regels schrijven voor
+    * de elementen op deze pagina.
+
+    * Je kunt complete tags een opmaak meegeven. Zo kun je bijvoorbeeld
+    * de hele pagina een achtergrond kleur geven
+    */
+    body{
+      background-color: bisque;
+    }
+
+
+    /* Een class begint altijd met een punt .
+    * kan worden gebruikt voor meerdere elementen
+    */
+
+    .rood{
+      color: red;
+    }
+
+    .schuin{
+      font-style: italic;
+    }
+
+    .dik{
+      font-weight: bold;
+    }
+
+    .div{
+      width: 200px;
+      margin: 10px;
+    }
+
+    /*
+    * Wil je nog meer kleuren gebruiken op je website?
+    * Een mooi overzicht met veel (lang niet alle!) beschikbare kleuren in CSS:
+    * http://www.rapidtables.com/web/color/RGB_Color.htm
+    */    
+
+    .oranje{
+      background-color: orange;
+    }
+
+    .rand{
+      border: 1px double black;
+
+      /* 
+        1px   = dikte van de lijn (1px)
+        solid = doorgetrokken streep (probeer ook eens dotted of dashed)
+        black = zwarte streep
+      */
+    }
+
+    /*
+      Je kunt verschillende CSS regels toepassen in 1 class
+      zo kun je bijvoorbeeld eenvoudig een knop maken
+    */
+    .knop{
+      background-color: orange;
+      border: 1px solid black;
+      color: black;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    /*
+      Met 'speciale' CSS regels kun je bepaalde opmaak alleen toewijzen
+      als er iets speciaals gebeurt. Als je bijvoorbeeld met de muis over
+      de knop heen gaat. Dit noemen we 'hover'. 
+      Je kunt deze regels op deze manier schrijven:
+    */
+    .knop:hover{
+      background-color: yellow;
+    }
+
+    /* Verschillende tekst groottes */
+    .groot{
+      font-size: 40pt;
+    }
+    .middel{
+      font-size: 20pt;
+    }
+    .klein{
+      font-size: 8pt;
+    }
+
+    /* Een ID begint altijd met een hekje #
+    * gebruik je om 1 element uit de pagina te stylen
+    */
+    #blauw{
+      color: blue;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!--
+    De span tag kun je gebruiken om stukjes uit de tekst aparte opmaak te geven.
+  -->
+  <p>
+    Dit is een <span id="blauw">blauw</span> woordje, terwijl dit <span class="rood">woordje</span> rood is!. Je kunt ook woorden <span class="dik">dik</span> of <span class="schuin">schuin</span> maken. Door de span tag en css te combineren kun je <span class="dik rood">opmaak combineren.</span>
+  </p>
+
+  <!-- 
+    Een div gebruik je meestal voor het aanwijzen van een vlak op je website. Je kunt dat vlak dan ook weer apart opmaken
+    of zelfs verplaatsen.
+  -->
+  <div class="div oranje">
+    Deze tekst staat in een div-tag. Als ik de div-tag kleiner maak dan deze zin lang is, dan wordt de zin afgebroken. Ook kan ik de div een aparte achtergrondkleur geven. Er is nog veel meer mogelijk, probeer maar het een en ander uit in combinatie met CSS!
+  </div>
+  
+  <!-- 
+    Een DIV element met een rand 
+  -->
+  <div class="div rand">
+    Je kunt alle elementen ook voorzien van een zichtbare rand. Deze rand noemen we een border.
+  </div>
+
+  <!-- 
+    Een paar verschillende letter groottes 
+  -->
+  <p>
+    <span class="groot oranje">Dit is een hele grote tekst met oranje achtergrond</span>
+    <span class="middel">Deze tekst is iets kleiner</span>
+    <span class="klein">En deze tekst is wel heel klein</span>
+  </p>
+
+  <!-- Een paar eenvoudige knoppen -->
+  <p>
+    <a class="knop" href="css_voorbeeld.html">Knop 1</a>
+    <a class="knop" href="css_voorbeeld.html">Knop 2</a>
+    <a class="knop" href="css_voorbeeld.html">Knop 3</a>
+  </p>
+
+</body>
+</html>
