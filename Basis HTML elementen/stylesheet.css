@@ -1,0 +1,10 @@
+/*
+* je kunt CSS selectors doen op tags, specifieke elementen maar je kunt ook groepen maken 
+* die dezelfde stijl krijgen. die doe je door een class aan te maken.
+
+* Een mooi overzicht met veel (lang niet alle!) beschikbare kleuren in CSS:
+* http://www.rapidtables.com/web/color/RGB_Color.htm
+*/
+body{
+  background-color: #F5DEB3;
+}
