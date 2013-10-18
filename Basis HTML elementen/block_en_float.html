@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Block, inline-block en floats in CSS!</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <style type="text/css">
+    div{
+      width: 200px;
+      background: #ADD8E6;
+      margin: 10px;
+    }
+
+    .left{
+      float: left;
+    }
+
+    .right{
+      float: right;
+    }
+    .break{
+      width: 100%;
+      clear: both;
+      height: 1px;
+      background-color: #eee;
+      margin: 20px 0px;
+    }
+
+    .knop{
+      display: block;
+      width: 200px;
+      height: 40px;
+      background-color: orange;
+      border:1px solid black;
+      text-align: center;
+    }
+
+    .link{
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      background-color: orange;
+      border:1px solid black;
+      text-align: center; 
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- 
+    Div elementen zijn standaard, net als P-elementen zogenaamde block-elementen
+    deze elementen staan iederen dus op hun eigen regel.
+  -->
+  <div>
+    Ik ben een div element van 200px breed en sta bovenaan de pagina
+  </div>
+  <div>
+    Ik ben een div element van 200px breed en sta onder mijn vorige divje
+  </div>
+  <div class="break"></div>
+
+  <!--
+    Soms is dat niet wat je wilt. Je kunt er voor kiezen om ze te 
+    laten drijven. Dit doe je met float:left en float:right. 
+    Elementen kunnen dan naast elkaar staan. Bijvoorbeeld de een
+    helemaal links en de ander helemaal rechts.
+  -->
+
+  <div class="left">
+    Ik ben een div element van 200px breed en sta aan de linker kant van het scherm.
+  </div>
+
+  <div class="right">
+    Ik ben een div element van 200px breed en sta aan de rechter kant van het scherm.
+  </div>
+
+  <div class="break"></div>
+
+  <!--
+    Als je wilt dat de elemten die komen gaan weer netjes op
+    een nieuwe regel beginnen, dan moet je gebruik maken van 
+    een los element en die als opmaak: 'clear: both' meegeven
+
+    Dit zegt eigenlijk; er mogen geen andere drijvende elementen
+    links of rechts van mij staan. Dit zorgt er dus voor dat het
+    op de volgende regel komt te staan.
+  -->
+  <div class="break"></div>
+
+  <!--
+    Maar je kunt ook beide elementen naast elkaar zetten
+  -->
+  <div class="left">
+    #1 Ik ben een div element van 200px breed en sta aan de linker kant van het scherm.
+  </div>
+
+  <div class="left">
+    <- Hee, ik ook! :)
+  </div>
+
+  <div class="break"></div>
+
+  <!--
+    En dat werkt natuurlijk ook aan de rechterkant
+  -->
+  <div class="right">
+    #1 Ik ben een div element van 200px breed en sta aan de rechter kant van het scherm.
+  </div>
+
+  <div class="right">
+    Hee, ik ook! :) ->
+  </div>
+
+  <div class="break"></div>
+
+  <!-- 
+    Je kunt elementen die nogmaal inline (geen block) elementen zijn
+    wel zo laten gedragen als block elementen. Dit zorgt er voor dat je
+    eenvoudig een margin, padding, height, enz kunt toewijzen aan deze elementen
+  -->
+
+  <a href="block_en_float.html" class="knop">Dit is een knop!</a>
+
+  <!--
+    Maar als je niet wilt dat er voor ieder block element een nieuwe regel
+    wordt gemaakt, dan kun je gebruik maken vaan 'display: inline-block'. Dit
+    combineert het goede van block-elementen met het goede van inline-elementen.
+
+    Dit zorgt er dus voor dat je midden in je tekst een knop kunt plaatsen zonder
+    een nieuwe regel te krijgen.
+  -->
+
+  <p>
+    Welkom op mijn website, vind je mijn website leuk? Klik dan <a href="block_en_float.html" class="link">hier</a>! Alvast bedankt!
+  </p>
+
+</body>
+</html>
