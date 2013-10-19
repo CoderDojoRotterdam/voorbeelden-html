@@ -37,7 +37,10 @@ body{
   margin-left: auto;
   margin-right: auto;
   list-style: none; /* Hiermee krijg je het bolletje voor lijsten weg */
+  
+  padding: 0px;
 }
+
 
 #menu > li{
   float: left;
@@ -51,9 +54,20 @@ body{
   padding-top: 10;
   padding: 10px;
   text-align: center;
+  color: black;
+
+  /* 
+    Met font-family pas je het lettertype aan. Kijk voor een lijstje
+    met beschikbare lettertypes op:
+    http://www.w3schools.com/cssref/css_websafe_fonts.asp
+  */
+  font-family: "helvetica";
 }
+
+/* Je kunt ook meerdere elementen selecteren door gebruik te maken van een comma */
 #menu > li > a:hover, #menu .actief{
   background-color: yellow;
+  font-weight: bold;
 }
 
 #tekst{
