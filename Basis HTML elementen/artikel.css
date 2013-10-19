@@ -1,0 +1,79 @@
+body{
+  background-color: #F5DEB3;
+  margin: 0px;;
+}
+
+#bovenkant{
+  padding: 10px;
+  background-color: white;
+  height: 100px;
+  border-bottom: 1px solid #999;
+}
+
+/* Door > te gebruiken kun je alle elementen binnen een ander element aanwijzen */
+#bovenkant > h1{
+  text-align: center;
+  margin-top: 0px;
+}
+.eerste_paragraaf{
+  font-weight: bold;
+}
+
+#strandbal{
+  float: left;
+  width: 300px; 
+  padding-right: 10px;
+}
+
+.knop{
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+#menu{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none; /* Hiermee krijg je het bolletje voor lijsten weg */
+}
+
+#menu > li{
+  float: left;
+  background-color: orange;
+  margin-right: 10px;
+  border: 1px solid #999;
+}
+#menu > li > a{
+  display: block;
+  width: 100px;
+  padding-top: 10;
+  padding: 10px;
+  text-align: center;
+}
+#menu > li > a:hover, #menu .actief{
+  background-color: yellow;
+}
+
+#tekst{
+  width: 800px;
+
+  /* Je kunt block elementen in het midden plaatsen door ze aan beide kanten gelijke margin te geven
+  dit kun je doen door ze op auto te zetten. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reactie{
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.naam{
+  font-weight: bold;
+}
+.datum{
+  font-style: italic;
+}

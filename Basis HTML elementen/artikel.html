@@ -3,6 +3,7 @@
 <head>
   <title>Voorbeeld artikel - Alle basis HTML elementen bij elkaar!</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="artikel.css" />
 </head>
 <body>
 
@@ -14,37 +15,47 @@
 
     Een zoetere variant is te vinden op http://cupcakeipsum.com
   -->
+  <div id="bovenkant">
+    <h1>Welkom op mijn website!</h1>
 
-  <h1>CoderDojo Rotterdam</h1>
+    <ul id="menu">
+      <li><a href="artikel.html" class="actief">Het artikel</a></li>
+      <li><a href="reacties.html">Reacties</a></li>
+      <li><a href="artikel.html">Gastenboek</a></li>
+      <li><a href="artikel.html">Tip ons</a></li>
+    </ul>
+  </div>
 
-  <p style="font-weight: bold;">
+  <div id="tekst">
+    <h1>CoderDojo Rotterdam</h1>
 
-    <img src="http://www.coderdojo-rotterdam.nl/images/coderdojo-rotterdam.png" alt="Mooie strandbal" style="float: left; width: 300px; padding-right: 10px" />
-    
-    Zoals je ziet kun je plaatjes en tekst combineren in dezelfde paragraaf. Standaard worden de tekst en het plaatje allebei op een nieuwe regel geplaatst, maar door tegen het plaatje te zeggen dat hij aan de linker kant van de tekst moet drijven (float: left) komen ze op dezelfde regel te staan. Voor de rest van dit artikel maak ik gebruik van <a href="http://lipsum.com">Lorem Ipsum</a> en <a href="http://cupcakeipsum.com">Cupcake Ipsum</a>.
-  </p>
+    <p class="eerste_paragraaf">
 
-  <p>
-    Nulla hendrerit ut dui at rhoncus. Maecenas blandit turpis ante, a molestie ante fermentum vel. Aenean non erat metus. Vivamus eu nisl pharetra, porta mauris congue, mollis justo. Aenean eget leo non est faucibus congue. Suspendisse non arcu ac velit eleifend suscipit a in arcu. Donec eu euismod mi. Nulla bibendum hendrerit ligula vitae rhoncus. Quisque quis mauris tortor. Ut hendrerit dignissim egestas. Integer eget ante bibendum ipsum hendrerit consequat quis a diam. Integer eu faucibus nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc condimentum, justo et porta consequat, mi magna adipiscing metus, in rhoncus enim massa a nisi.
-  </p>
+      <img id="strandbal" src="http://www.coderdojo-rotterdam.nl/images/coderdojo-rotterdam.png" alt="Mooie strandbal" />
+      
+      Zoals je ziet kun je plaatjes en tekst combineren in dezelfde paragraaf. Standaard worden de tekst en het plaatje allebei op een nieuwe regel geplaatst, maar door tegen het plaatje te zeggen dat hij aan de linker kant van de tekst moet drijven (float: left) komen ze op dezelfde regel te staan. Voor de rest van dit artikel maak ik gebruik van <a href="http://lipsum.com">Lorem Ipsum</a> en <a href="http://cupcakeipsum.com">Cupcake Ipsum</a>.
+    </p>
 
-  <p>
-    Quisque non dapibus libero. Nunc felis est, mattis sed porttitor sit amet, venenatis quis sem. Ut bibendum nibh quis pellentesque viverra. Donec egestas, nunc ut aliquet elementum, enim tellus pellentesque est, at volutpat quam est quis neque. Nullam fringilla, nulla at volutpat venenatis, orci dui venenatis arcu, a venenatis arcu justo vitae libero. Etiam sodales ultricies nisi, eu malesuada orci dapibus sit amet. Sed lacinia tellus quis dui fermentum, a tincidunt magna imperdiet. Donec augue quam, vehicula ut congue ut, faucibus mollis nisi. Nam est tortor, commodo vitae accumsan eget, pharetra sed turpis. Vestibulum metus lorem, venenatis vitae porttitor in, pharetra sed ipsum. Quisque eget justo augue. Sed viverra justo diam, ac dictum nisl faucibus vestibulum. Nulla ut neque mollis, pellentesque mi ac, consectetur ante. Vestibulum aliquet at massa eu suscipit. Quisque commodo tempus lectus, quis vestibulum sapien facilisis at.
-  </p>
+    <p>
+      Nulla hendrerit ut dui at rhoncus. Maecenas blandit turpis ante, a molestie ante fermentum vel. Aenean non erat metus. Vivamus eu nisl pharetra, porta mauris congue, mollis justo. Aenean eget leo non est faucibus congue. Suspendisse non arcu ac velit eleifend suscipit a in arcu. Donec eu euismod mi. Nulla bibendum hendrerit ligula vitae rhoncus. Quisque quis mauris tortor. Ut hendrerit dignissim egestas. Integer eget ante bibendum ipsum hendrerit consequat quis a diam. Integer eu faucibus nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc condimentum, justo et porta consequat, mi magna adipiscing metus, in rhoncus enim massa a nisi.
+    </p>
 
-  <p>
-   Marshmallow muffin croissant tootsie roll tiramisu liquorice jelly beans halvah. Sesame snaps jelly-o sweet dessert soufflé tart cupcake cake macaroon. Gummi bears croissant soufflé pastry soufflé biscuit caramels dessert bonbon. Pudding chocolate bar sweet muffin sweet toffee jelly brownie. Wafer tiramisu oat cake apple pie toffee. Pie gummies icing chocolate. Candy cupcake jelly beans carrot cake jelly-o danish fruitcake carrot cake. Sweet caramels gummies jelly-o. Tootsie roll apple pie gummi bears chocolate. Bonbon candy fruitcake gummi bears toffee tootsie roll. Bonbon chupa chups chocolate danish brownie topping. Fruitcake sugar plum tart tootsie roll halvah.
-  </p>
+    <p>
+      Quisque non dapibus libero. Nunc felis est, mattis sed porttitor sit amet, venenatis quis sem. Ut bibendum nibh quis pellentesque viverra. Donec egestas, nunc ut aliquet elementum, enim tellus pellentesque est, at volutpat quam est quis neque. Nullam fringilla, nulla at volutpat venenatis, orci dui venenatis arcu, a venenatis arcu justo vitae libero. Etiam sodales ultricies nisi, eu malesuada orci dapibus sit amet. Sed lacinia tellus quis dui fermentum, a tincidunt magna imperdiet. Donec augue quam, vehicula ut congue ut, faucibus mollis nisi. Nam est tortor, commodo vitae accumsan eget, pharetra sed turpis. Vestibulum metus lorem, venenatis vitae porttitor in, pharetra sed ipsum. Quisque eget justo augue. Sed viverra justo diam, ac dictum nisl faucibus vestibulum. Nulla ut neque mollis, pellentesque mi ac, consectetur ante. Vestibulum aliquet at massa eu suscipit. Quisque commodo tempus lectus, quis vestibulum sapien facilisis at.
+    </p>
 
-  <p>
-    Muffin pie candy canes apple pie muffin chupa chups jujubes. Apple pie applicake dessert soufflé powder cookie fruitcake. Cookie marzipan gummi bears cheesecake. Pie sweet candy. Chocolate cake applicake lollipop tootsie roll. Liquorice jelly-o lollipop tart. Marzipan liquorice bonbon. Jujubes sweet dessert applicake icing cheesecake. Jelly beans jelly beans tiramisu danish unerdwear.com chocolate bar cookie topping. Applicake cupcake cookie topping chocolate bar. Gingerbread cotton candy apple pie topping candy cake bear claw tootsie roll. Pudding marshmallow gummi bears danish lemon drops soufflé brownie.
-  </p>
+    <p>
+     Marshmallow muffin croissant tootsie roll tiramisu liquorice jelly beans halvah. Sesame snaps jelly-o sweet dessert soufflé tart cupcake cake macaroon. Gummi bears croissant soufflé pastry soufflé biscuit caramels dessert bonbon. Pudding chocolate bar sweet muffin sweet toffee jelly brownie. Wafer tiramisu oat cake apple pie toffee. Pie gummies icing chocolate. Candy cupcake jelly beans carrot cake jelly-o danish fruitcake carrot cake. Sweet caramels gummies jelly-o. Tootsie roll apple pie gummi bears chocolate. Bonbon candy fruitcake gummi bears toffee tootsie roll. Bonbon chupa chups chocolate danish brownie topping. Fruitcake sugar plum tart tootsie roll halvah.
+    </p>
 
-  <p>
-    <a href="reacties.html">Ga naar de reacties (2)</a>
-  </p>
+    <p>
+      Muffin pie candy canes apple pie muffin chupa chups jujubes. Apple pie applicake dessert soufflé powder cookie fruitcake. Cookie marzipan gummi bears cheesecake. Pie sweet candy. Chocolate cake applicake lollipop tootsie roll. Liquorice jelly-o lollipop tart. Marzipan liquorice bonbon. Jujubes sweet dessert applicake icing cheesecake. Jelly beans jelly beans tiramisu danish unerdwear.com chocolate bar cookie topping. Applicake cupcake cookie topping chocolate bar. Gingerbread cotton candy apple pie topping candy cake bear claw tootsie roll. Pudding marshmallow gummi bears danish lemon drops soufflé brownie.
+    </p>
 
-  
+    <p>
+      <a class="knop" href="reacties.html">Ga naar de reacties (2)</a>
+    </p>
+  </div>
 
 </body>
 </html>
