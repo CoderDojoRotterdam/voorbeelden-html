@@ -1,27 +1,78 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Hier kun je je eigen titel neerzetten</title>
+  <title>Boxmodel demo</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  
-  <style type="text/css">
-  /*
-  * Hier kun je de CSS van de website beschrijven
-  * kleurtjes, lettertypes, etc.
-  */
-  </style>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <script src="jquery.js"></script>
 
   <script>
-    /*
-    * Hier kun je javascript schrijven
-    */
+    $(document).ready(function(){
+
+      // Vraag het element op met behulp van jQuery
+      var el_outer = $("#demo_outer"),
+          el_inner = $("#demo_inner");
+
+      // Als de width_input veranderd
+      $("#width_input").on('change keyup blur', function(){
+        el_inner.width($("#width_input").val())
+      });
+
+      // Als de height_input veranderd
+      $("#height_input").on('change keyup blur', function(){
+        el_inner.height($("#height_input").val())
+      });
+
+      // Als de border_input veranderd
+      $("#border_input").on('change keyup blur', function(){
+        el_outer.css({'border-width' : $("#border_input").val()})
+      });
+
+      // Als de padding_input veranderd
+      $("#padding_input").on('change keyup blur', function(){
+        el_outer.css({'padding': $("#padding_input").val()});
+      });
+
+      // Als de margin_input veranderd
+      $("#margin_input").on('change keyup blur', function(){
+        el_outer.css({'box-shadow' : "0px 0px 0px "+$("#margin_input").val()+"px #F8CC9A"})
+      });
+
+    });
   </script>
+
 </head>
 <body>
 
-  <!--
-    Hier heb je alle ruimte om je eigen website te maken! Veel plezier :-)
-  -->
+  <div id="demo_outer">
+    <div id="demo_inner">
+      Dit is een demonstratie van het boxmodel. Deze demonstratie laat
+      zien welk effect de verschillende waardes voor border, margin en padding hebben op het
+      element zelf en de omliggende elementen. Om te zien wat er gebeurt bij welke waarde
+      kun je de waardes zelf aanpassen onderaan deze pagina.
+    </div>
+  </div>
+
+  <div id="paneel">
+    <table>
+      <tr>
+        <td>Border</td>
+        <td><input id="border_input" type="text" value="0" /></td>
+        <td>Width</td>
+        <td><input id="width_input" type="text" value="200" /></td>
+      </tr>
+      <tr>
+        <td>Padding</td>
+        <td><input id="padding_input" type="text" value="0" /></td>
+        <td>Height</td>
+        <td><input id="height_input" type="text" value="200" /></td>
+      </tr>
+      <tr>
+        <td>Margin</td>
+        <td><input id="margin_input" type="text" value="0" /></td>
+      </tr>
+    </table>
+  </div>
 
 </body>
 </html>

@@ -1,15 +1,16 @@
 body, html{
   margin: 0px;
   height: 100%;
+  text-align: center;
 }
 
+/* Pisitioneer het controlepaneel onderaan de pagina */
 #paneel{
   height:200px;
 
   /* Je kunt breedtes en hoogtes ook in procenten opgeven */
-  width: 100%;  
-
-  background-color: #ded;
+  width: 100%;
+  background-color: #F9F7ED;
 
   /* 
     Met position absolute kunt je elementen forceren een bepaalde
@@ -19,11 +20,29 @@ body, html{
   position: absolute;
   bottom: 0px;
 }
-
 #paneel table{
   margin-left:  auto;
   margin-right: auto;
 }
 #paneel td{
   padding: 10px;
+  font-family: arial
+}
+
+/* Pisitioneer de demo div*/
+#demo_outer{
+  display: inline-block;
+  background-color: #C0CE86;
+  margin-top: 100px;
+  text-align: center;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0px;
+}
+
+#demo_inner{
+  float: left;
+  background-color: #89B3C0;
+  width: 200px;
+  height: 200px;
 }
