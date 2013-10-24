@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Inline, Block en Inline-Block demo</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <script src="jquery.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      // Vraag het element op met behulp van jQuery
+      var el = $("#demo span");
+
+      // Als de width_input veranderd
+      $("[name='mode']").on('change click', function(e){
+        var gekozen_modus = $(e.target).val();
+        el.css({'display': gekozen_modus});
+      });
+    });
+  </script>
+
+</head>
+<body>
+
+  <div id="demo">
+    <p>
+      Dit is een <span>demonstratie</span> van de CSS property display. Deze demonstratie laat
+      zien welk effect de verschillende waardes voor display element zelf en de omliggende elementen. Om te zien wat er gebeurt bij welke waarde kun je de waardes zelf aanpassen onderaan deze pagina.
+      Let hierbij goed op het woord 'demonstratie' in het donker groen en de omliggende tekst.
+    </p>
+    <p>
+      In alle gevallen heeft het woordje demonstratie een padding en margin van 10 pixels. Alleen hoe dit er uit komt te zien hangt af van de waarde voor display.
+    </p>
+  </div>
+
+  <div id="paneel">
+    <table>
+      <tr>
+        <td>inline</td>
+        <td><input name="mode" type="radio" value="inline" checked="checked" /></td>
+      </tr>
+      <tr>
+        <td>block</td>
+        <td><input name="mode" type="radio" value="block" /></td>
+      </tr>
+      <tr>
+        <td>inline-block</td>
+        <td><input name="mode" type="radio" value="inline-block" /></td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

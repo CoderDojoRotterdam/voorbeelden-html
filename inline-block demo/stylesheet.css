@@ -1,0 +1,45 @@
+body, html{
+  margin: 0px;
+  height: 100%;
+  text-align: center;
+}
+
+/* Pisitioneer het controlepaneel onderaan de pagina */
+#paneel{
+  height:200px;
+
+  /* Je kunt breedtes en hoogtes ook in procenten opgeven */
+  width: 100%;
+  background-color: #F9F7ED;
+
+  /* 
+    Met position absolute kunt je elementen forceren een bepaalde
+    positie aan te nemen. Vervolgens kun je het element met 
+    top, bottom, left en right het element een plaats geven.
+  */
+  position: absolute;
+  bottom: 0px;
+}
+#paneel table{
+  margin-left:  auto;
+  margin-right: auto;
+}
+#paneel td{
+  padding: 10px;
+  font-family: arial
+}
+
+/* Pisitioneer de demo div*/
+#demo{  
+  width: 300px;
+  padding: 10px;
+  margin: 100px auto 0px auto;
+  background-color: #C0CE86;
+  text-align: center;
+}
+
+#demo span{
+  background-color: green;
+  padding: 10px;
+  margin: 10px;
+}
